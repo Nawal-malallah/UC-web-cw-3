@@ -1,0 +1,59 @@
+h1 {
+  font-family: monospace;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: teal;
+  margin: 1px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 2px darkkhaki;
+}
+
+.box:hover {
+  background-color: turquoise;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* The element to apply the animation to */
+.anime {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
